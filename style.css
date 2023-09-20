@@ -1,0 +1,24 @@
+* {box-sizing: border-box;
+}
+.test {
+  margin: auto;
+  width: 50%;
+  height: 500px;
+  background: hsla(224, 100%, 50%, 0.449);
+}
+h2{
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+.object{
+  margin: auto;
+  width: 25%;
+  height: 250px;
+  background-color: aqua;
+}
+
