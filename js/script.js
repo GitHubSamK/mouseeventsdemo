@@ -1,5 +1,8 @@
 
 
+
+
+
 const test  = document.querySelector('.test');
 const point = document.querySelector('#point');
 
@@ -13,5 +16,17 @@ test.addEventListener('mousedown', (e) => {
     console.log("Event Object: ", e);
 });
 
-const object =document.querySelector('#object');
+const myButton = document.getElementById('myButton');
+
+
+myButton.addEventListener('click', moveblock);
+
+function moveblock() {
+    const box = document.querySelector('.box');
+    box.classList.toggle('move');
+
+
+    
+}
+
 

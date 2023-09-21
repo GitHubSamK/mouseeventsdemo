@@ -1,10 +1,14 @@
 * {box-sizing: border-box;
 }
+body{
+
+height: 100vh;
+}
 .test {
   margin: auto;
   width: 50%;
   height: 500px;
-  background: hsla(224, 100%, 50%, 0.449);
+  background: hsla(230, 100%, 50%, 0.568);
 }
 h2{
   text-align: center;
@@ -15,10 +19,35 @@ h1{
 h3{
   text-align: center;
 }
-.object{
+#object{
   margin: auto;
   width: 25%;
   height: 250px;
   background-color: aqua;
+}
+
+
+
+.box{
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background-color: blue; 
+  color: aliceblue;
+  text-align: center; 
+}
+
+.move{
+  animation: slideup 1s ease;
+}
+
+@keyframes slideup {
+  0%{
+      transform: translateY(0rem) ;
+  }
+  
+  100%{
+    transform: translateY(-8rem);
+  }
 }
 
