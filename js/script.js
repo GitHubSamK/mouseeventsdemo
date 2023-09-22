@@ -29,4 +29,11 @@ function moveblock() {
     
 }
 
+const secondButton = document.getElementById('secondButton');
 
+secondButton.addEventListener('click', dance);
+
+function dance() {
+    const anim = document.querySelector('.anim');
+    anim.classList.toggle('wiggle');
+}

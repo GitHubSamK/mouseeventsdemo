@@ -1,8 +1,9 @@
 * {box-sizing: border-box;
 }
 body{
-
+background-color: black;
 height: 100vh;
+margin: auto;
 }
 .test {
   margin: auto;
@@ -12,18 +13,26 @@ height: 100vh;
 }
 h2{
   text-align: center;
+  color: aliceblue;
 }
 h1{
   text-align: center;
+  color: aliceblue;
 }
 h3{
   text-align: center;
+  color: aliceblue;
 }
 #object{
   margin: auto;
   width: 25%;
   height: 250px;
   background-color: aqua;
+}
+
+button{
+  background:linear-gradient(rgba(255, 255, 0, 0.928),rgba(255, 166, 0, 0.884));
+  color: black;
 }
 
 
@@ -38,8 +47,11 @@ h3{
 }
 
 .move{
-  animation: slideup 1s ease;
+  animation: slideup 1s ease-in-out;
+  animation-fill-mode: forwards;
 }
+
+
 
 @keyframes slideup {
   0%{
@@ -49,5 +61,36 @@ h3{
   100%{
     transform: translateY(-8rem);
   }
+ 
+
 }
 
+.wiggle{
+
+  animation: skew 3s infinite;
+  transform: skew(10deg);
+  animation-direction: alternate;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(10deg);
+  }
+  100% {
+    transform: skewX(-10deg);
+  }
+}
+
+.anim {
+  margin: auto;
+  width: 25%;
+  height: 400px;
+}
+
+#area{
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  height: 500px;
+  background: hsla(230, 100%, 50%, 0.568);
+}
